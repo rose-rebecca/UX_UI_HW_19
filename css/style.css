@@ -1,0 +1,173 @@
+/* Navigation */
+header {
+    background-color: #2424723a;
+    padding: 15px;
+}
+
+.logo {
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+header ul {
+    float: right;
+    color: white;
+}
+
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+header p {
+    display: inline-block;
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Sen', sans-serif;
+    font-size: 85px;
+}
+
+/* body */
+
+body {
+    margin: 0;
+    background: rgb(26, 149, 158);
+    background-image: url("/images/background-image.jpg");
+    background-size: cover;
+    font-size: 24pt;
+    font-family: 'Sen', sans-serif;
+    text-align: center;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffffff3b;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+button {
+    padding: 15px;
+    font-size: 15px;
+    background-color: turquoise;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Sen', sans-serif;
+}
+
+/* footer */
+
+footer {
+    background-color: #373738;
+    max-height: max-content;
+    padding: 50px;
+    color: white;
+}
+
+.footer-logo {
+    float: inline-start;
+    padding: 0px;
+}
+
+footer ul {
+    display: inline-block;
+    list-style: none;
+    padding-left: 5px;
+}
+
+footer li {
+   display: inline-block;
+   padding: 0px 7px;
+}
+
+footer p {
+    padding: 15px;
+    font-size: 16px;
+    float: right;
+}
+
+/* My Skills */
+.flexContainer {
+    display: flex;
+    padding: 60px 30px;
+}
+.flexContainer div {
+    width: 33%;
+    padding: 25px;
+}
+
+/* My Work */
+.myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color: #ebebeb70;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
+    ;
+}
+.workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80px;
+}
+.content1 {
+    grid-area: content1;
+}
+.content2 {
+    grid-area: content2;
+}
+.content3 {
+    grid-area: content3;
+}
+
+@media only screen and (max-width: 600) {
+ .flexContainer {
+  
+    padding: 60px 30px;
+ }
+ .flexContainer div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px;
+  }
+
+  #categoryGrid {
+      margin: 0px 5%;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: auto;
+      grid-template-areas:
+      "user research"
+      "tools and programs"
+      "soft skills";
+  }
+
+}
