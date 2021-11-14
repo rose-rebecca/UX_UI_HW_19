@@ -2,16 +2,18 @@
 header {
     background-color: #2424723a;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
-    float: left;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 header ul {
-    float: right;
+    display: flex;
     color: white;
+    
 }
 
 header li {
@@ -24,10 +26,25 @@ header p {
 }
 
 h1 {
-    display: inline-block;
     font-family: 'Sen', sans-serif;
-    font-size: 85px;
+    font-size: 83px;
 }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigationLinks {
+    display: flex;
+    float: inline-end;
+}
+.navigationLinks a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+}
+
 
 /* body */
 
@@ -39,6 +56,7 @@ body {
     font-size: 24pt;
     font-family: 'Sen', sans-serif;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .content {
@@ -103,6 +121,7 @@ footer p {
     padding: 25px;
 }
 
+
 /* My Work */
 .myWork {
     padding: 60px 30px;
@@ -135,7 +154,7 @@ footer p {
     grid-area: img3;
 }
 .img1, .img2, .img3, .content1, .content2, .content3 {
-    padding: 80px;
+    padding: 30px;
 }
 .content1 {
     grid-area: content1;
@@ -149,7 +168,6 @@ footer p {
 
 @media only screen and (max-width: 600) {
  .flexContainer {
-  
     padding: 60px 30px;
  }
  .flexContainer div {
